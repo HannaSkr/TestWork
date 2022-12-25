@@ -44,23 +44,24 @@ return array;
 //метод, создающий новый массив из элементов, длина которых 3 и меньше символов
 string[] GetShortWordArray(string[] array)
 {
-    string[] result = new string[array.Length + 1];
+    string[] result = new string[array.Length];
     int count = 0;
-    foreach (string value in array)
+    foreach (string item in array)      
     {
-        if (value.Length <=2)
+        if (item.Length <=3)
         {
-            result[count] = value;
+            result[count] = item;
             count ++;
         }
     }
+    
     return result;
 }
 
 //метод, который будет печатать массив
 void PrintArray(string[] array)
 {
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i <array.Length; i++)
 {
 Console.Write($"{array[i]} ");
 }
@@ -68,9 +69,11 @@ Console.WriteLine();
 }
 
 int dimension = GetNumberFromConsole("Введите количество элементов массива");
+Console.WriteLine();
 string[] startArray = InitArray(dimension);
 Console.WriteLine();
 PrintArray(startArray);
 Console.WriteLine();
 string[] finalArray = GetShortWordArray(startArray);
 PrintArray(finalArray);
+Console.WriteLine();
