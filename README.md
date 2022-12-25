@@ -15,4 +15,6 @@
 
 *Блок-схема основного метода:*
 
-![блок-схема метода](https://github.com/HannaSkr/TestWork/new/master/TestWork.drawio.png)
+![блок-схема метода](https://github.com/HannaSkr/TestWork/blob/master/TestWork.drawio.png)
+
+
